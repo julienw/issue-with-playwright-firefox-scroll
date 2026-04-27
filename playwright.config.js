@@ -9,5 +9,6 @@ module.exports = defineConfig({
   projects: [
     { name: "chromium", use: { ...devices["Desktop Chrome"] } },
     { name: "firefox", use: { ...devices["Desktop Firefox"] } },
+    { name: "firefox-nightly", use: { ...devices["Desktop Firefox"], channel: "moz-firefox-nightly", launchOptions: { executablePath: process.env.FIREFOX_NIGHTLY } } },
   ],
 });

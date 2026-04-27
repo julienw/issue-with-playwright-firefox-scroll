@@ -49,3 +49,12 @@ Firefox fails. Playwright log:
 npm run test:firefox
 npm run test:chromium
 ```
+
+## Run against Firefox Nightly with Bidi
+
+The `firefox-nightly` project expects the binary at `~/firefox-nightly-en/firefox`
+by default. Override with the `FIREFOX_NIGHTLY` env variable:
+
+```sh
+FIREFOX_NIGHTLY=/path/to/firefox-nightly npx playwright test --project=firefox-nightly
+```
